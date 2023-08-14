@@ -1,6 +1,6 @@
 import EducationTab from "@/components/EducationTab";
+import ExperienceItem from "@/components/ExperienceItem";
 import SectionTitle from "@/components/SectionTitle";
-import React from "react";
 
 const Resume = () => {
   return (
@@ -8,6 +8,9 @@ const Resume = () => {
       {/* Intro  */}
       <div>
         <SectionTitle title="Experience" />
+        <div className="py-4">
+          <ExperienceItem />
+        </div>
       </div>
 
       {/* Skills  */}
