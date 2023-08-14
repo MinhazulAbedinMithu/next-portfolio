@@ -29,7 +29,7 @@ const SkillInfoTab = ({ data }) => {
                 (listItem, listIndex) => (
                   <li
                     key={listIndex}
-                    className={`relative before:content-["▹"] before:absolute before:-left-4 before:text-emerald-300 py-[5px] `}
+                    className={`relative before:content-["▹"] before:absolute before:-left-4 before:text-emerald-300 py-[5px] font-mono`}
                   >
                     {listItem}
                   </li>
