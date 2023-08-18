@@ -122,7 +122,10 @@ const EducationTab = () => {
               tabInfo[activeTabInfo.rootIndex].body[activeTabInfo.childIndex]
                 .body
             ).map((childKey, index) => (
-              <div className="flex items-start justify-between gap-6 pt-4 w-full">
+              <div
+                className="flex items-start justify-between gap-6 pt-4 w-full"
+                key={index}
+              >
                 <div className="capitalize">{childKey}: </div>{" "}
                 <div>
                   {
