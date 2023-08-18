@@ -1,6 +1,9 @@
 import EducationTab from "@/components/EducationTab";
 import ExperienceItem from "@/components/ExperienceItem";
 import SectionTitle from "@/components/SectionTitle";
+import imgTaskeasy from "@/public/images/taskeasy.png";
+import imgBariKoi from "@/public/images/barikoi.jpg";
+import imgTangleLabs from "@/public/images/tangleLabs.png";
 
 const experienceItemInfo = [
   {
@@ -8,7 +11,7 @@ const experienceItemInfo = [
     endDate: "Present",
     companyName: "TaskEasy IT Solutions",
     companyWebsite: "https://www.taskeasy.io/",
-    companyPhoto: "",
+    companyPhoto: imgTaskeasy,
     postion: "Frontend Developer",
     majorWorks: [
       {
@@ -50,7 +53,7 @@ const experienceItemInfo = [
     endDate: "Oct 2022",
     companyName: "BariKoi",
     companyWebsite: "https://www.barikoi.com/",
-    companyPhoto: "",
+    companyPhoto: imgBariKoi,
     postion: "Frontend Developer Intern",
     majorWorks: [
       {
@@ -71,7 +74,7 @@ const experienceItemInfo = [
     endDate: "Feb 2022",
     companyName: "Tangle Labs",
     companyWebsite: "https://tanglelabs.io/",
-    companyPhoto: "",
+    companyPhoto: imgTangleLabs,
     postion: "Frontend Developer Builder",
     majorWorks: [
       {

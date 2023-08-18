@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import imgTaskeasy from "@/public/images/taskeasy.png";
 
 const ExperienceItem = ({ info }) => {
   return (
@@ -25,11 +24,11 @@ const ExperienceItem = ({ info }) => {
             </p>
           </div>
           <Image
-            src={imgTaskeasy}
+            src={info.companyPhoto}
             alt="Taskeasy"
             width="150"
-            height="auto"
-            className="bg-[#59f9ff4f] rounded-lg"
+            height="60"
+            className=" rounded-lg h-[50px]"
           />
         </div>
         <ul className="p-2">
