@@ -84,8 +84,12 @@ const EducationTab = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-start justify-start gap-6 pt-4">
-        <div className={`${activeTabInfo.rootIndex === 0 && "w-1/4"}`}>
+      <div className="flex items-start justify-start gap-6 pt-4 flex-col sm:flex-row">
+        <div
+          className={`${
+            activeTabInfo.rootIndex === 0 && "w-full sm:w-1/4"
+          } flex items-start justify-evenly sm:justify-start flex-row sm:flex-col `}
+        >
           {tabInfo[activeTabInfo.rootIndex].body.map(
             (childItem, childIndex) => (
               <div

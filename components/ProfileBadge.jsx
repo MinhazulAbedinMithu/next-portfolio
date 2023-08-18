@@ -4,6 +4,8 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaDiscord, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import imgProfile from "@/public/images/minhaz.png";
+import { CgMenuLeftAlt } from "react-icons/cg";
+import { MdLightMode } from "react-icons/md";
 
 const socialIcons = [
   {
@@ -36,7 +38,7 @@ const socialIcons = [
 const ProfileBadge = () => {
   return (
     <div className="w-full ">
-      <div className={`w-full h-full`}>
+      <div className={`w-full h-full hidden sm:block`}>
         <div className="h-2/5 bg-green-800 w-full rounded-t-md"></div>
         <div className="h-3/5 bg-[#0A192F] w-full relative rounded-b-md">
           <div className=" w-40 h-40 rounded-full absolute top-[-60px] left-[50%] translate-x-[-50%]  shadow-lg drop-shadow-lg overflow-hidden bg-[#0A192F] border-[3px] border-emerald-500">
@@ -71,6 +73,26 @@ const ProfileBadge = () => {
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="block sm:hidden w-full">
+        <div className="flex items-center justify-between">
+          <div>
+            <h4>Minhazul Abedin</h4>
+            <span>Frontend Developer</span>
+          </div>
+          <ul className="flex items-center justify-end">
+            <li className=" flex items-center justify-center flex-col">
+              <button className="px-3 py-4 text-3xl">
+                <MdLightMode />
+              </button>
+            </li>
+            <li className=" flex items-center justify-center flex-col">
+              <button className="px-3 py-4 text-3xl">
+                <CgMenuLeftAlt />
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

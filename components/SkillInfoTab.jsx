@@ -4,8 +4,8 @@ import React, { useState } from "react";
 const SkillInfoTab = ({ data }) => {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <div className="flex items-start justify-start gap-6 pt-4">
-      <div className="">
+    <div className="w-full flex items-start justify-start flex-col sm:flex-row gap-6 pt-4">
+      <div className="flex items-start justify-start flex-row sm:flex-col overflow-x-auto w-full sm:w-auto">
         {data.map((skillInfo, index) => (
           <div
             key={index}

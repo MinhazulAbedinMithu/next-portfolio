@@ -73,9 +73,9 @@ const skillTabInfo = [
 
 export default function Home() {
   return (
-    <main className="pl-4 py-4 h-full">
+    <main className="pl-4 py-4 h-full w-full ">
       {/* Intro  */}
-      <div>
+      <div className="w-full">
         <SectionTitle title="about" />
         <h4 className="text-[18px] font-mono pt-4">
           Hello! I&apos;m Minhazul Abedin
