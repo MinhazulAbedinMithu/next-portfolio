@@ -2,6 +2,7 @@ import NavigationBar from "@/components/NavigationBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ProfileBadge from "@/components/ProfileBadge";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
