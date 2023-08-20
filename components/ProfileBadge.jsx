@@ -52,7 +52,7 @@ const ProfileBadge = () => {
           <div className="pt-[125px] w-full flex items-center flex-col">
             <h4 className="text-2xl font-bold">Minhazul Abedin</h4>
             <p className="text-md text-emerald-500 font-medium">
-              Software Engineer
+              Frontend Developer
             </p>
 
             {/* Social Icons  */}
