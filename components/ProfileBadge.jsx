@@ -11,27 +11,27 @@ const socialIcons = [
   {
     name: "Github",
     icon: <AiFillGithub />,
-    link: "",
+    link: "https://github.com/MinhazulAbedinMithu",
   },
   {
     name: "WhatsApp",
     icon: <FaWhatsapp />,
-    link: "",
+    link: "https://wa.me/01848321597",
   },
-  {
-    name: "Discord",
-    icon: <FaDiscord />,
-    link: "",
-  },
+  // {
+  //   name: "Discord",
+  //   icon: <FaDiscord />,
+  //   link: "",
+  // },
   {
     name: "Linkedin",
     icon: <FaLinkedin />,
-    link: "",
+    link: "https://www.linkedin.com/in/minhazulabedinmithu/",
   },
   {
     name: "Facebook",
     icon: <FaFacebook />,
-    link: "",
+    link: "https://facbook.com/MinhazulAbedinMithu",
   },
 ];
 
