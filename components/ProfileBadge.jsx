@@ -61,6 +61,7 @@ const ProfileBadge = () => {
                 <Link
                   href={item.link}
                   key={index}
+                  target="_blank"
                   className="text-white hover:text-emerald-400 hover:scale-110 hover:duration-200 transition-all"
                 >
                   {item.icon}
@@ -69,12 +70,20 @@ const ProfileBadge = () => {
             </div>
             {/* Contact Buttons  */}
             <div className="flex items-center justify-center gap-4 py-4">
-              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold border border-transparent hover:border-emerald-400 shadow-md px-3 py-2 rounded-md drop-shadow-md">
+              <Link
+                href="mailto:minhazulabedinmithu@gmail.com"
+                target="_blank"
+                className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold border border-transparent hover:border-emerald-400 shadow-md px-3 py-2 rounded-md drop-shadow-md"
+              >
                 Contact me
-              </button>
-              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold shadow-md px-3 py-2 border border-transparent hover:border-emerald-400 rounded-md drop-shadow-md">
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1T8wpZmBlrqIItsyKw81w1_XZVkZV7gQg/view?usp=drive_link"
+                target="_blank"
+                className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold shadow-md px-3 py-2 border border-transparent hover:border-emerald-400 rounded-md drop-shadow-md"
+              >
                 Download cv
-              </button>
+              </Link>
             </div>
           </div>
         </div>
