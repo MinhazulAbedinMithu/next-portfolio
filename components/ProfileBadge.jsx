@@ -58,17 +58,21 @@ const ProfileBadge = () => {
             {/* Social Icons  */}
             <div className="flex items-center justify-around gap-4 text-2xl pt-4">
               {socialIcons.map((item, index) => (
-                <Link href={item.link} key={index}>
+                <Link
+                  href={item.link}
+                  key={index}
+                  className="text-white hover:text-emerald-400 hover:scale-110 hover:duration-200 transition-all"
+                >
                   {item.icon}
                 </Link>
               ))}
             </div>
             {/* Contact Buttons  */}
             <div className="flex items-center justify-center gap-4 py-4">
-              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold  shadow-md px-3 py-2 rounded-md drop-shadow-md">
+              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold border border-transparent hover:border-emerald-400 shadow-md px-3 py-2 rounded-md drop-shadow-md">
                 Contact me
               </button>
-              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold shadow-md px-3 py-2 rounded-md drop-shadow-md">
+              <button className="bg-[#0d244b] hover:text-emerald-400 transition-all duration-200 font-bold shadow-md px-3 py-2 border border-transparent hover:border-emerald-400 rounded-md drop-shadow-md">
                 Download cv
               </button>
             </div>
