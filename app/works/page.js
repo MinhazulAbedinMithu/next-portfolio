@@ -26,25 +26,21 @@ const projectsData = [
     ],
   },
   {
-    title: "Pictures Gallery",
-    description: "It's an amazing Pictures Gallery",
+    title: "Nitexx : LandingPage",
+    description: "It's a Landing page",
     links: {
       live: "",
       github: "",
     },
     thumbnail:
-      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG5pNHN3dWd0c3BzcW56dW12NWlxeWozeHZkdGtnY21yN3Awd3hoYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U9gftKdpHWftkHe4Lb/giphy.gif",
-    // "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2c3b2l4cDI1OWVqenM2aWRoa2Jpd25icTlvZmNieHdpd3lrd3FpbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U9gftKdpHWftkHe4Lb/giphy.mp4",
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJxeXlxZWtqNnN2aXYwYzllZTA4OHFyNWYxdWczcnBja2ozZzN2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fMnjabd4c5MJEMzWEB/giphy.gif",
     images: {
       largeScreen: "",
       smallScreen: "",
     },
     features: [
-      "User can add new image from device.",
-      "Allow users to rearrange the order of images in the gallery",
-      "Drag-and-drop functionality for reordering and Featured image",
-      "Allow users to select multiple images and delete them.",
-      "Smooth and responsive user experience",
+      "Responsive Landing Page",
+
       "It's an optimized Progressive Web Application(PWA)",
     ],
   },
