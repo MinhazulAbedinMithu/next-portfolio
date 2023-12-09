@@ -4,7 +4,27 @@ import ProjectItem from "./ProjectItem";
 
 const projectsData = [
   {
-    id: 1,
+    title: "Taskeasy - Workflow",
+    description: "It's an amazing Automation Platform like Zapier",
+    links: {
+      live: "https://workflow.taskeasy.io/",
+      github: "",
+    },
+    thumbnail:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamp3NmpqNTkyZXEwZzdqampudDBsbzBvbDB6ZTNnYnJ0NnlpcGk5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NtvfSSOygazxYmQIgQ/giphy.gif",
+    images: {
+      largeScreen: "",
+      smallScreen: "",
+    },
+    features: [
+      "You can automate your task",
+      "Interact with multiple platforms",
+      "Connect two or more applications",
+      "Automate your repeatitive tasks in workflow",
+      "Smooth and responsive user experience",
+    ],
+  },
+  {
     title: "Pictures Gallery",
     description: "It's an amazing Pictures Gallery",
     links: {
@@ -27,7 +47,6 @@ const projectsData = [
     ],
   },
   {
-    id: 1,
     title: "Nitexx : LandingPage",
     description: "It's a Landing page",
     links: {
