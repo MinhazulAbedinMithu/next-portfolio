@@ -2,6 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {
+  MdKeyboardDoubleArrowDown,
+  MdKeyboardDoubleArrowUp,
+} from "react-icons/md";
 
 const ProjectItem = ({ info, index, isExpanded, onExpand }) => {
   const { id, title, description, links, thumbnail, images, features } = info;
@@ -36,7 +40,17 @@ const ProjectItem = ({ info, index, isExpanded, onExpand }) => {
         className={`w-full bg-gradient-to-b from-black/40 via-black/60 to-black hover:bg-black hover:text-emerald-400 absolute  left-0 flex items-center justify-center p-1 font-bold cursor-pointer bottom-0`}
         onClick={() => onExpand(index)}
       >
-        {isExpanded ? "Collapse" : "Expand"}
+        {isExpanded ? (
+          <div className="flex items-center justify-center gap-2 font-medium">
+            <span>Collapse</span>
+            <MdKeyboardDoubleArrowUp />
+          </div>
+        ) : (
+          <div className="flex items-center justify-center gap-2 font-medium">
+            <span>Expand</span>
+            <MdKeyboardDoubleArrowDown />
+          </div>
+        )}
       </div>
     </div>
   );
