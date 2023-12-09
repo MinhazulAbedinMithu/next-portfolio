@@ -5,7 +5,7 @@ import ProjectItem from "./ProjectItem";
 const projectsData = [
   {
     title: "Taskeasy - Workflow",
-    description: "It's an amazing Automation Platform like Zapier",
+    description: "It's an Automation Platform like Zapier",
     links: {
       live: "https://workflow.taskeasy.io/",
       github: "",
@@ -26,7 +26,7 @@ const projectsData = [
   },
   {
     title: "Pictures Gallery",
-    description: "It's an amazing Pictures Gallery",
+    description: "It's wonderful Pictures Gallery",
     links: {
       live: "https://picturesgallery.vercel.app/",
       github: "https://github.com/MinhazulAbedinMithu/pictures-gallery",
@@ -50,8 +50,8 @@ const projectsData = [
     title: "Nitexx : LandingPage",
     description: "It's a Landing page",
     links: {
-      live: "",
-      github: "",
+      live: "https://nitexx.vercel.app/",
+      github: "https://github.com/MinhazulAbedinMithu/nitex",
     },
     thumbnail:
       "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJxeXlxZWtqNnN2aXYwYzllZTA4OHFyNWYxdWczcnBja2ozZzN2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fMnjabd4c5MJEMzWEB/giphy.gif",

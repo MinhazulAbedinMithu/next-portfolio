@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
+  MdCheck,
   MdKeyboardDoubleArrowDown,
   MdKeyboardDoubleArrowUp,
 } from "react-icons/md";
@@ -26,13 +27,20 @@ const ProjectItem = ({ info, index, isExpanded, onExpand }) => {
         <h2 className="text-2xl font-bold">{title}</h2>
         <p className="py-1">{description}</p>
         <div className="flex items-center justify-start gap-x-4 text-emerald-400 font-semibold">
-          <Link href={links.live}>Live</Link>
-          <Link href={links.github}>Code</Link>
+          <Link href={links.live} target="_blank">
+            Live
+          </Link>
+          <Link href={links.github} target="_blank">
+            Code
+          </Link>
         </div>
         <h4 className="text-lg font-medium pt-2">Features: </h4>
         <ol className="pl-4">
           {features.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="flex items-center justify-start gap-2">
+              <MdCheck className="text-emerald-600" />
+              {item}
+            </li>
           ))}
         </ol>
       </div>
