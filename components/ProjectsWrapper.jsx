@@ -24,6 +24,7 @@ const projectsData = [
       "Smooth and responsive user experience",
     ],
   },
+
   {
     title: "Pictures Gallery",
     description: "It's wonderful Pictures Gallery",
@@ -42,6 +43,26 @@ const projectsData = [
       "Allow users to rearrange the order of images in the gallery",
       "Drag-and-drop functionality for reordering and Featured image",
       "Allow users to select multiple images and delete them.",
+      "Smooth and responsive user experience",
+      "It's an optimized Progressive Web Application(PWA)",
+    ],
+  },
+  {
+    title: "Arogga Next",
+    description: "Arogga cloned application UI",
+    links: {
+      live: "https://arogga-next.vercel.app/",
+      github: "https://github.com/MinhazulAbedinMithu/arogga",
+    },
+    thumbnail:
+      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDlseHpham1ibHB3czRka20zNXJjd3JicDR6bmxoNWE1NDRodzNzMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VtlIiVUKc0MTPEYvxb/giphy.gif",
+    images: {
+      largeScreen: "",
+      smallScreen: "",
+    },
+    features: [
+      "Cloned web app from arogga",
+      "Build with next js",
       "Smooth and responsive user experience",
       "It's an optimized Progressive Web Application(PWA)",
     ],
