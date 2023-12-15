@@ -37,22 +37,23 @@ const tabInfo = [
   {
     title: "Professional",
     body: [
-      {
-        title: "Responsive Web Design",
-        body: {
-          institution: "Programming Hero",
-          technology: "JavaScript, MERN",
-          batch: "2021",
-        },
-      },
-      {
-        title: "Complete Web Development",
-        body: {
-          institution: "Creative IT Institute",
-          technology: "HTML, CSS, JQuery, Bootstrap",
-          batch: "WEB-1822",
-        },
-      },
+      {},
+      // {
+      //   title: "Responsive Web Design",
+      //   body: {
+      //     institution: "Programming Hero",
+      //     technology: "JavaScript, MERN",
+      //     batch: "2021",
+      //   },
+      // },
+      // {
+      //   title: "Complete Web Development",
+      //   body: {
+      //     institution: "Creative IT Institute",
+      //     technology: "HTML, CSS, JQuery, Bootstrap",
+      //     batch: "WEB-1822",
+      //   },
+      // },
     ],
   },
 ];
@@ -113,15 +114,15 @@ const EducationTab = () => {
             <span className="capitalize">
               {
                 tabInfo[activeTabInfo.rootIndex].body[activeTabInfo.childIndex]
-                  .title
+                  ?.title
               }
             </span>
           </h4>
           <div>
             {Object.keys(
-              tabInfo[activeTabInfo.rootIndex].body[activeTabInfo.childIndex]
-                .body
-            ).map((childKey, index) => (
+              tabInfo[activeTabInfo.rootIndex]?.body[activeTabInfo.childIndex]
+                ?.body || {}
+            )?.map((childKey, index) => (
               <div
                 className="flex items-start justify-between gap-6 pt-4 w-full"
                 key={index}
@@ -129,9 +130,9 @@ const EducationTab = () => {
                 <div className="capitalize">{childKey}: </div>{" "}
                 <div>
                   {
-                    tabInfo[activeTabInfo.rootIndex].body[
+                    tabInfo[activeTabInfo.rootIndex]?.body[
                       activeTabInfo.childIndex
-                    ].body[childKey]
+                    ]?.body[childKey]
                   }
                 </div>
               </div>
