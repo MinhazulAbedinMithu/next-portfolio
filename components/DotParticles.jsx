@@ -83,11 +83,15 @@ const DotParticles = () => {
     const ICON_PATHS = [
       "/images/react.png",
       "/images/nextjs.png",
-      "/images/nodejs.png",
+      "/images/neon.png",
+      "/images/digital-ocean.png",
       "/images/mongodb.png",
       "/images/tailwind.png",
-      "/images/js.png",
-      "/images/strapi.png"
+      "/images/typescript.png",
+      "/images/supabase.png",
+      "/images/strapi.png",
+      "/images/typescript.png",
+      "/images/css.png",
     ];
     const sprites = [];
     const loader = new THREE.TextureLoader();
@@ -99,15 +103,15 @@ const DotParticles = () => {
           const mat = new THREE.SpriteMaterial({
             map: tex,
             transparent: true,
-            opacity: 0.55,
+            opacity: 0.88,
           });
           const sprite = new THREE.Sprite(mat);
           sprite.userData = {
-            orbitRadius: 2.2 + (i % 3) * 0.6,
+            orbitRadius: 1.6 + (i % 4) * 0.55,
             orbitAngle: (i / ICON_PATHS.length) * Math.PI * 2,
-            orbitSpeed: 0.08 + (i % 3) * 0.04,
-            vertAmplitude: 0.8 + (i % 2) * 0.5,
-            vertFreq: 0.4 + i * 0.08,
+            orbitSpeed: 0.06 + (i % 3) * 0.03,
+            vertAmplitude: 0.55 + (i % 2) * 0.4,
+            vertFreq: 0.35 + i * 0.07,
             phase: Math.random() * Math.PI * 2,
           };
           sprites.push(sprite);
@@ -176,7 +180,7 @@ const DotParticles = () => {
         sprite.position.y = Math.sin(d.orbitAngle * d.vertFreq + d.phase) * d.vertAmplitude;
         sprite.position.z = Math.sin(d.orbitAngle * 0.5) * 0.8;
         // Subtle breathing pulse
-        const s = 0.36 + Math.sin(t * 1.4 + d.phase) * 0.05;
+        const s = 0.52 + Math.sin(t * 1.4 + d.phase) * 0.07;
         sprite.scale.set(s, s, s);
       });
 

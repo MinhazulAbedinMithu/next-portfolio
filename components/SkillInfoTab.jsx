@@ -29,12 +29,11 @@ const SkillInfoTab = ({ data }) => {
         {data.map((skillInfo, index) => (
           <div
             key={index}
-            className={`cursor-pointer hover:text-purple-800 dark:hover:text-[#00ffee] hover:bg-neutral-300 dark:hover:bg-[#131313] py-2 px-2 rounded-b-md ${
-              index === activeTab ? "text-purple-800 dark:text-[#00ffee] bg-neutral-300 dark:bg-[#131313]" : ""
-            }`}
+            className={`cursor-pointer hover:text-purple-800 dark:hover:text-[#00ffee] hover:bg-neutral-300 dark:hover:bg-[#131313] py-2 px-2 rounded-b-md ${index === activeTab ? "text-purple-800 dark:text-[#00ffee] bg-neutral-300 dark:bg-[#131313]" : ""
+              }`}
             onClick={() => setActiveTab(index)}
           >
-            <h4>{skillInfo.title}</h4>
+            <h4 className="whitespace-nowrap font-medium">{skillInfo.title}</h4>
           </div>
         ))}
       </div>

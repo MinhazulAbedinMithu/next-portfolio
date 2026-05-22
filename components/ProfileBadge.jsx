@@ -67,8 +67,40 @@ const ProfileBadge = () => {
   return (
     <div className="w-full">
       <div className={`w-full h-full hidden sm:block`}>
-        <div className="relative h-2/5 bg-[#4f1372] dark:bg-[#0f5550] w-full rounded-t-md">
+        <div className="relative h-2/5 bg-[#220037] dark:bg-[#00201e] w-full rounded-t-md overflow-hidden">
           <DotParticles />
+          {/* Skills overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-start pt-4 z-10 pointer-events-none select-none">
+            <p className="text-[10px] uppercase tracking-[0.35em] text-white/80 font-semibold mb-1 font-mono">
+              ⟨ My Tech Stack ⟩
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-2 px-4">
+              {[
+                { name: "React", img: "/images/react.png" },
+                { name: "Next.js", img: "/images/nextjs.png" },
+                { name: "Node.js", img: "/images/nodejs.png" },
+                { name: "MongoDB", img: "/images/mongodb.png" },
+                { name: "Tailwind", img: "/images/tailwind.png" },
+                { name: "Typescript", img: "/images/typescript.png" },
+                { name: "Strapi", img: "/images/strapi.png" },
+                { name: "DigitalOcean", img: "/images/digital-ocean.png" },
+                { name: "Supabase", img: "/images/supabase.png" },
+              ].map((skill, i) => (
+                <div
+                  key={skill.name}
+                  style={{ animationDelay: `${i * 80}ms` }}
+                  className="skill-badge flex items-center gap-1.5 px-2.5 py-1 rounded-full
+                    bg-white/10 border border-white/20 backdrop-blur-md
+                    text-white text-[11px] font-semibold font-mono
+                    shadow-[0_2px_12px_rgba(0,0,0,0.25)]
+                    animate-badge-in"
+                >
+                  <img src={skill.img} alt={skill.name} className="w-4 h-4 object-contain drop-shadow" />
+                  {skill.name}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <div className="h-3/5 bg-neutral-200 dark:bg-[#0c0c0c] w-full relative rounded-b-md">
           <div className=" w-40 h-40 rounded-full absolute top-[-60px] left-[50%] translate-x-[-50%] overflow-hidden shadow-pp-dark-shadow dark:shadow-pp-shadow bg-purple-800 dark:bg-[#1b928a] border-[3px] border-purple-800 dark:border-[#00ffee]">

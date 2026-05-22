@@ -17,7 +17,7 @@ const skillTabInfo = [
     },
   },
   {
-    title: "UI & Styling",
+    title: "UI Styling",
     description: {
       styling: ["Tailwind CSS", "SCSS", "shadcn/ui"],
     },
