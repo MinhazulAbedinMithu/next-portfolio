@@ -3,48 +3,55 @@ import ExperienceItem from "@/components/ExperienceItem";
 import SectionTitle from "@/components/SectionTitle";
 import imgTaskeasy from "@/public/images/taskeasy.png";
 import imgBariKoi from "@/public/images/barikoi.jpg";
-import imgTangleLabs from "@/public/images/tangleLabs.png";
 
 const experienceItemInfo = [
   {
-    startDate: "Nov 2022",
+    startDate: "Apr 2024",
     endDate: "Present",
+    companyName: "Fiverr",
+    companyWebsite: "https://www.fiverr.com/",
+    companyPhoto: null,
+    position: "Freelance Full-Stack Developer",
+    majorWorks: [
+      {
+        text: "Built RKE Companion — an AI-powered research compliance and grant management platform for universities, researchers, and research support teams.",
+        link: false,
+      },
+      {
+        text: "Built Pumppad — a crypto token launchpad letting users create, launch, and manage meme and community-based cryptocurrency tokens.",
+        link: false,
+      },
+      {
+        text: "Delivered Luvis, a service-booking SaaS in Next.js + TypeScript, simplifying complex appointment scheduling through optimized global state management.",
+        link: false,
+      },
+    ],
+  },
+  {
+    startDate: "Nov 2022",
+    endDate: "Dec 2023",
     companyName: "TaskEasy IT Solutions",
     companyWebsite: "https://www.taskeasy.io/",
     companyPhoto: imgTaskeasy,
-    postion: "Frontend Developer",
+    position: "Software Engineer",
     majorWorks: [
       {
-        text: "Build Automation Web App like Zapier",
+        text: "Engineered a Zapier-style automation engine in Node.js / Express.js — low-latency event-driven integrations across 10+ third-party APIs with background job processing.",
         link: {
           href: "https://workflow.taskeasy.io/",
           title: "TaskEasy Workflow",
         },
       },
       {
-        text: "Built Matrimonial Application",
-        link: {
-          href: "https://digitalghotok.com/",
-          title: "Digital Ghotok",
-        },
-      },
-      {
-        text: "GoHighLevel: Automation, Surveys, Funnels, Website",
-        link: false,
-      },
-      {
-        text: "AI Holiday Travel Planner. Applying Prompt Engineering",
-        link: {
-          href: "https://rutugo.travel/",
-          title: "Rutogo",
-        },
-      },
-      {
-        text: "Built Obsidian Plugin. Which is send and receive data between obsidian, google sheet and google docs via api. Build with Node JS.",
+        text: "Architected a bidirectional Obsidian plugin syncing data live between Obsidian, Google Sheets, and Google Docs via REST APIs, eliminating all manual data transfer.",
         link: {
           href: "https://github.com/MinhazulAbedinMithu/obsidian-test-template",
-          title: "Beta Repo",
+          title: "Repo",
         },
+      },
+      {
+        text: "Automated end-to-end marketing and CRM pipelines in GoHighLevel — funnels, surveys, and lead workflows — reducing operational overhead significantly.",
+        link: false,
       },
     ],
   },
@@ -54,38 +61,17 @@ const experienceItemInfo = [
     companyName: "BariKoi",
     companyWebsite: "https://www.barikoi.com/",
     companyPhoto: imgBariKoi,
-    postion: "Frontend Developer Intern",
+    position: "Front-End Developer Intern",
     majorWorks: [
       {
-        text: "Buld & Impletement Map Functionalities",
+        text: "Implemented interactive map UIs handling large geodata sets in React.js, improving location accuracy for BariKoi's mapping platform.",
         link: false,
       },
       {
-        text: "Building Delivery Management System",
+        text: "Built logistics-tracking dashboards for the Rapido delivery system, giving dispatchers clearer visibility across live delivery routes.",
         link: {
           href: "https://www.rapido.com.bd/",
           title: "Rapido",
-        },
-      },
-    ],
-  },
-  {
-    startDate: "Nov 2021",
-    endDate: "Feb 2022",
-    companyName: "Tangle Labs",
-    companyWebsite: "https://tanglelabs.io/",
-    companyPhoto: imgTangleLabs,
-    postion: "Frontend Developer Builder",
-    majorWorks: [
-      {
-        text: "Build 3 Landing Pages with react, ts, including their current Website",
-        link: false,
-      },
-      {
-        text: "Design nft marketplace Web App",
-        link: {
-          href: "https://inspyrd.io/",
-          title: "Inspyrd",
         },
       },
     ],

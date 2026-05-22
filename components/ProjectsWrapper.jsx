@@ -4,86 +4,57 @@ import ProjectItem from "./ProjectItem";
 
 const projectsData = [
   {
-    title: "Taskeasy - Workflow",
-    description: "It's an Automation Platform like Zapier",
+    title: "AussieDuo Cleaning Services",
+    description:
+      "Multi-location booking platform with headless Strapi CMS, SSR, and structured data — driving lead generation through optimized Core Web Vitals and SEO.",
+    stack: "Next.js · Strapi CMS · Tailwind CSS · GraphQL",
     links: {
-      live: "https://workflow.taskeasy.io/",
-      github: "",
+      live: "https://aussieduocleaningservice.com.au",
+      github: null,
     },
-    thumbnail:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExamp3NmpqNTkyZXEwZzdqampudDBsbzBvbDB6ZTNnYnJ0NnlpcGk5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NtvfSSOygazxYmQIgQ/giphy.gif",
-    images: {
-      largeScreen: "",
-      smallScreen: "",
-    },
+    thumbnail: null,
     features: [
-      "You can automate your task",
-      "Interact with multiple platforms",
-      "Connect two or more applications",
-      "Automate your repeatitive tasks in workflow",
-      "Smooth and responsive user experience",
-    ],
-  },
-
-  {
-    title: "Pictures Gallery",
-    description: "It's wonderful Pictures Gallery",
-    links: {
-      live: "https://picturesgallery.vercel.app/",
-      github: "https://github.com/MinhazulAbedinMithu/pictures-gallery",
-    },
-    thumbnail:
-      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG5pNHN3dWd0c3BzcW56dW12NWlxeWozeHZkdGtnY21yN3Awd3hoYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U9gftKdpHWftkHe4Lb/giphy.gif",
-    images: {
-      largeScreen: "",
-      smallScreen: "",
-    },
-    features: [
-      "User can add new image from device.",
-      "Allow users to rearrange the order of images in the gallery",
-      "Drag-and-drop functionality for reordering and Featured image",
-      "Allow users to select multiple images and delete them.",
-      "Smooth and responsive user experience",
-      "It's an optimized Progressive Web Application(PWA)",
+      "Headless CMS integration with Strapi and GraphQL",
+      "Server-Side Rendering (SSR) for fast initial page loads",
+      "Structured data markup for enhanced search visibility",
+      "Multi-location booking flow with optimized UX",
+      "Core Web Vitals tuned for top SEO performance",
     ],
   },
   {
-    title: "Arogga Next",
-    description: "Arogga cloned application UI",
+    title: "Prinon E-Commerce Platform",
+    description:
+      "Full-stack marketplace with JWT/RBAC auth, dynamic product catalogs, promotional deal engine, and MongoDB aggregation for rapid faceted retrieval.",
+    stack: "Next.js · Node.js · Express.js · MongoDB · Tailwind CSS",
     links: {
-      live: "https://arogga-next.vercel.app/",
-      github: "https://github.com/MinhazulAbedinMithu/arogga",
+      live: "https://prinonbd.com",
+      github: null,
     },
-    thumbnail:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDlseHpham1ibHB3czRka20zNXJjd3JicDR6bmxoNWE1NDRodzNzMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/VtlIiVUKc0MTPEYvxb/giphy.gif",
-    images: {
-      largeScreen: "",
-      smallScreen: "",
-    },
+    thumbnail: null,
     features: [
-      "Cloned web app from arogga",
-      "Build with next js",
-      "Smooth and responsive user experience",
-      "It's an optimized Progressive Web Application(PWA)",
+      "JWT-based authentication with Role-Based Access Control (RBAC)",
+      "Dynamic product catalog with faceted search via MongoDB aggregation",
+      "Promotional deal engine with time-based offer management",
+      "Admin dashboard for inventory, orders, and user management",
+      "Fully responsive UI built with Tailwind CSS",
     ],
   },
   {
-    title: "Nitexx : LandingPage",
-    description: "It's a Landing page",
+    title: "Somali Red",
+    description:
+      "Pixel-perfect, accessibility-first web app using Next.js App Router and modular React architecture — flawless across all devices with top Core Web Vitals.",
+    stack: "Next.js · React.js · Tailwind CSS · Vercel",
     links: {
-      live: "https://nitexx.vercel.app/",
-      github: "https://github.com/MinhazulAbedinMithu/nitex",
+      live: "https://somali-red.vercel.app",
+      github: null,
     },
-    thumbnail:
-      "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnJxeXlxZWtqNnN2aXYwYzllZTA4OHFyNWYxdWczcnBja2ozZzN2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fMnjabd4c5MJEMzWEB/giphy.gif",
-    images: {
-      largeScreen: "",
-      smallScreen: "",
-    },
+    thumbnail: null,
     features: [
-      "Responsive Landing Page",
-
-      "It's an optimized Progressive Web Application(PWA)",
+      "Next.js App Router with modular, reusable React components",
+      "Accessibility-first design (WCAG-compliant markup)",
+      "Pixel-perfect implementation from design spec",
+      "Top-tier Core Web Vitals scores (LCP, CLS, FID)",
+      "Fully responsive across all screen sizes",
     ],
   },
 ];

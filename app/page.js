@@ -3,77 +3,56 @@ import SkillInfoTab from "@/components/SkillInfoTab";
 
 const skillTabInfo = [
   {
-    title: "Languages",
+    title: "Core Stack",
     description: {
-      languages: ["Javascript (ES5/ ES6+)", "C", "Typescript", "HTML", "CSS"],
+      languages: ["TypeScript", "JavaScript (ES6+)", "HTML5", "CSS3"],
+      frontend: ["React.js", "Next.js 14", "Redux Toolkit", "shadcn/ui"],
+      backend: ["Node.js", "Express.js", "REST APIs", "WebSockets"],
     },
   },
   {
-    title: "Front-End Technologies",
+    title: "Databases",
     description: {
-      frontend_Technologies: [
-        "React JS",
-        "Redux",
-        "Next JS",
-        "React Flow",
-        "Mapbox GL",
-        "PWA",
+      databases: ["MongoDB / Mongoose", "Supabase", "Firebase"],
+    },
+  },
+  {
+    title: "UI & Styling",
+    description: {
+      styling: ["Tailwind CSS", "SCSS", "shadcn/ui"],
+    },
+  },
+  {
+    title: "Tools & Infra",
+    description: {
+      deployment: ["DigitalOcean", "Vercel"],
+      services: ["Cloudinary", "Meilisearch"],
+      workflow: ["Git / GitHub", "Jira", "ClickUp", "Zapier"],
+      cms: ["Strapi CMS", "GoHighLevel"],
+    },
+  },
+  {
+    title: "Expertise",
+    description: {
+      architecture: [
+        "SSR / SSG Architecture",
+        "JWT / RBAC Auth",
+        "SaaS Architecture",
+        "E-Commerce Platforms",
+        "Spec-Driven Development (SDD)",
       ],
-    },
-  },
-  {
-    title: "UI Styling",
-    description: {
-      styling_Frameworks: [
-        "Bootstrap",
-        "Material UI",
-        "Ant Design",
-        "Carbon Design System",
-        "Tailwind CSS",
-        "SCSS",
+      specializations: [
+        "Technical SEO & Core Web Vitals",
+        "Performance Optimization",
+        "Headless CMS Integration",
       ],
-    },
-  },
-  {
-    title: "Backend Technologies",
-    description: {
-      backend_Technologies: ["Node JS", "Express JS", "Socket.IO [basic]"],
-    },
-  },
-  {
-    title: "Tools & Platforms",
-    description: {
-      tools: [
-        "Git",
-        "Webpack",
-        "Firebase",
-        "NPM",
-        "Workflow Automation",
-        "Mapbox / MapLibre GL",
-      ],
-      platforms: [
-        "Github",
-        "Bitbucket",
-        "Zapier",
-        "GoHighLevel",
-        "Click Up",
-        "Jira",
-        "Slack",
-        "Notion",
-      ],
-    },
-  },
-  {
-    title: "Database",
-    description: {
-      database: ["MySQL", "MongoDB (mongoose)"],
     },
   },
 ];
 
 export default function Home() {
   return (
-    <main className="pl-4 py-4 h-full w-full ">
+    <main className="pl-4 py-4 h-full w-full">
       {/* Intro  */}
       <div className="w-full">
         <SectionTitle title="about" />
@@ -81,20 +60,22 @@ export default function Home() {
           Hello! I&apos;m Minhazul Abedin
         </h4>
         <p className="text-base font-mono py-2">
-          I am a Programming lover and self-taught web developer practicing ES6,
-          React, Node, MongoDB, Express, Typescript, Rest API, Material UI,
-          SASS, JSON, and so on.
+          Results-oriented Full Stack Specialist proficient in architecting and
+          deploying high-performance web platforms, specializing in the Next.js,
+          React, and Node.js ecosystem.
         </p>
         <p className="text-base font-mono py-2">
-          I am very interested in learning new technologies and working with
-          them. I always try to incorporate my acquired knowledge into real life
-          projects and constantly and further develop my acquired knowledge.
+          Proven expertise in delivering complex solutions — from scalable SaaS
+          and E-commerce marketplaces to real-time AI/automation and data
+          synchronization engines. I combine deep technical proficiency with a
+          strong focus on clean architecture, technical SEO, and exceptional
+          user experience.
         </p>
-        <div className="flex items-center justify-start gap-8 font-mono flex-col sm:flex-row pt-4">
+        <div className="flex items-start md:items-center justify-start gap-8 font-mono flex-col sm:flex-row pt-4">
           <div>
             <div>
-              <span>Age: </span>
-              <span>26</span>
+              <span>Role: </span>
+              <span>Full Stack Specialist</span>
             </div>
             <div>
               <span>Status: </span>
@@ -103,12 +84,12 @@ export default function Home() {
           </div>
           <div>
             <div>
-              <span>Residence: </span>
-              <span>Bangladesh</span>
+              <span>Location: </span>
+              <span>Dhaka, Bangladesh</span>
             </div>
             <div>
-              <span>Address: </span>
-              <span>Dhaka, Bangladesh</span>
+              <span>Email: </span>
+              <span>minhazulabedinmithu@gmail.com</span>
             </div>
           </div>
         </div>

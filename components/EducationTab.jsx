@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef, useState } from "react";
 
 const tabInfo = [
   {
@@ -63,15 +64,37 @@ const EducationTab = () => {
     rootIndex: 0,
     childIndex: 1,
   });
+  const contentRef = useRef(null);
+  const tabRef = useRef([]);
+
+  useEffect(() => {
+    gsap.fromTo(
+      contentRef.current,
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.5 }
+    );
+  }, [activeTabInfo]);
+
+  useEffect(() => {
+    tabRef.current.forEach((tab, index) => {
+      gsap.fromTo(
+        tab,
+        { opacity: 0, scale: 0.9 },
+        { opacity: 1, scale: 1, duration: 0.3, delay: index * 0.1 }
+      );
+    });
+  }, []);
+
   return (
     <div className="py-4">
       <div className="flex items-center justify-center gap-4 w-full py-1 border-b border-gray-700">
         {tabInfo.map((rootItem, rootIndex) => (
           <div
             key={rootIndex}
-            className={`cursor-pointer hover:text-emerald-300 hover:bg-[#0e213d] drop-shadow-md py-2 px-2 rounded-b-md ${
+            ref={(el) => (tabRef.current[rootIndex] = el)}
+            className={`cursor-pointer hover:text-purple-800 dark:hover:text-[#00ffee] hover:bg-neutral-300 dark:hover:bg-[#131313] drop-shadow-md py-2 px-2 rounded-b-md ${
               rootIndex === activeTabInfo.rootIndex &&
-              "text-emerald-400 bg-[#0e213d] shadow-lg"
+              "text-purple-800 dark:text-[#00ffee] bg-neutral-300 dark:bg-[#131313] shadow-lg"
             }`}
             onClick={() =>
               setActiveTabInfo({
@@ -91,25 +114,23 @@ const EducationTab = () => {
             activeTabInfo.rootIndex === 0 && "w-full sm:w-1/4"
           } flex items-start justify-evenly sm:justify-start flex-row sm:flex-col `}
         >
-          {tabInfo[activeTabInfo.rootIndex].body.map(
-            (childItem, childIndex) => (
-              <div
-                key={childIndex}
-                className={`cursor-pointer hover:text-emerald-300 capitalize hover:bg-[#0e213d] py-2 px-2 rounded-b-md ${
-                  childIndex === activeTabInfo.childIndex &&
-                  "text-emerald-400 bg-[#0e213d]"
-                }`}
-                onClick={() =>
-                  setActiveTabInfo({ ...activeTabInfo, childIndex: childIndex })
-                }
-              >
-                {childItem.title}
-              </div>
-            )
-          )}
+          {tabInfo[activeTabInfo.rootIndex].body.map((childItem, childIndex) => (
+            <div
+              key={childIndex}
+              className={`cursor-pointer hover:text-purple-800 dark:hover:text-[#00ffee] capitalize hover:bg-neutral-300 dark:hover:bg-[#131313] py-2 px-2 rounded-b-md ${
+                childIndex === activeTabInfo.childIndex &&
+                "text-purple-800 dark:text-[#00ffee] bg-neutral-300 dark:bg-[#131313]"
+              }`}
+              onClick={() =>
+                setActiveTabInfo({ ...activeTabInfo, childIndex: childIndex })
+              }
+            >
+              {childItem.title}
+            </div>
+          ))}
         </div>
-        <div>
-          <h4 className="text-emerald-300 text-xl font-mono">
+        <div ref={contentRef}>
+          <h4 className="text-purple-800 dark:text-[#00ffee] text-xl font-mono">
             @{" "}
             <span className="capitalize">
               {
