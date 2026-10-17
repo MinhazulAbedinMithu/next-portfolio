@@ -25,6 +25,18 @@ const experienceItemInfo = [
         text: "Delivered Luvis, a service-booking SaaS in Next.js + TypeScript, simplifying complex appointment scheduling through optimized global state management.",
         link: false,
       },
+      {
+        text: "Built AI-driven automation features by integrating LLM APIs (OpenAI / Claude) with prompt pipelines and background workflows.",
+        link: false,
+      },
+      {
+        text: "Deployed and maintained client apps on DigitalOcean, AWS, and Vercel — Dockerized Node.js services behind Nginx with SSL, environment management, and GitHub Actions CI/CD pipelines.",
+        link: false,
+      },
+      {
+        text: "Accelerated delivery with an AI-assisted workflow — Claude Code, Cursor, and GitHub Copilot guided by spec-driven development, with AI-aided code review, refactoring, and test generation.",
+        link: false,
+      },
     ],
   },
   {

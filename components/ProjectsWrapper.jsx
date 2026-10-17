@@ -4,6 +4,25 @@ import ProjectItem from "./ProjectItem";
 
 const projectsData = [
   {
+    title: "DJ D-LYTE — Event Booking Platform & Client Portal",
+    description:
+      "Rebuilt a WordPress site into a fast, SEO-first booking platform for an Oahu DJ & event business, with a client portal and admin CRM.",
+    stack:
+      "Astro · TypeScript · Node.js · PostgreSQL · Stripe · Adobe Sign · Spotify & Apple Music APIs",
+    links: {
+      live: "https://djdlyte.com",
+      github: null,
+    },
+    thumbnail: null,
+    features: [
+      "WordPress-to-Astro rebuild focused on speed and technical SEO",
+      "Client portal and admin CRM for managing bookings",
+      "Adobe Sign contracts built into the booking flow",
+      "Stripe deposit payments",
+      "Spotify + Apple Music playlist planner for events",
+    ],
+  },
+  {
     title: "AussieDuo Cleaning Services",
     description:
       "Multi-location booking platform with headless Strapi CMS, SSR, and structured data — driving lead generation through optimized Core Web Vitals and SEO.",
@@ -22,21 +41,22 @@ const projectsData = [
     ],
   },
   {
-    title: "Prinon E-Commerce Platform",
+    title: "RealHoms — Real Estate SaaS & Marketplace",
     description:
-      "Full-stack marketplace with JWT/RBAC auth, dynamic product catalogs, promotional deal engine, and MongoDB aggregation for rapid faceted retrieval.",
-    stack: "Next.js · Node.js · Express.js · MongoDB · Tailwind CSS",
+      "Multi-tier real estate ecosystem supporting buyers, agents, property owners, and administrators with role-based routing, advanced faceted search, and rich property detail showcases.",
+    stack:
+      "Next.js 16 · TypeScript · Node.js · MongoDB · Tailwind CSS · Stripe · Firebase",
     links: {
-      live: "https://prinonbd.com",
+      live: "https://realhoms.com",
       github: null,
     },
     thumbnail: null,
     features: [
-      "JWT-based authentication with Role-Based Access Control (RBAC)",
-      "Dynamic product catalog with faceted search via MongoDB aggregation",
-      "Promotional deal engine with time-based offer management",
-      "Admin dashboard for inventory, orders, and user management",
-      "Fully responsive UI built with Tailwind CSS",
+      "Role-based routing for buyers, agents, property owners, and admins",
+      "Advanced faceted search and rich property detail pages",
+      "Stripe-powered wallet with automated application fee routing",
+      "Withdrawal ledger and KYC verification pipeline",
+      "Multi-tenant administrative moderation dashboards",
     ],
   },
   {
@@ -55,6 +75,24 @@ const projectsData = [
       "Pixel-perfect implementation from design spec",
       "Top-tier Core Web Vitals scores (LCP, CLS, FID)",
       "Fully responsive across all screen sizes",
+    ],
+  },
+  {
+    title: "Prinon E-Commerce Platform",
+    description:
+      "Full-stack marketplace with JWT/RBAC auth, dynamic product catalogs, promotional deal engine, and MongoDB aggregation for rapid faceted retrieval.",
+    stack: "Next.js · Node.js · Express.js · MongoDB · Tailwind CSS",
+    links: {
+      live: "https://prinonbd.com",
+      github: null,
+    },
+    thumbnail: null,
+    features: [
+      "JWT-based authentication with Role-Based Access Control (RBAC)",
+      "Dynamic product catalog with faceted search via MongoDB aggregation",
+      "Promotional deal engine with time-based offer management",
+      "Admin dashboard for inventory, orders, and user management",
+      "Fully responsive UI built with Tailwind CSS",
     ],
   },
 ];

@@ -23,10 +23,33 @@ const skillTabInfo = [
     },
   },
   {
-    title: "Tools & Infra",
+    title: "Cloud & DevOps",
     description: {
-      deployment: ["DigitalOcean", "Vercel"],
+      cloud: ["AWS (EC2 · S3 · IAM)", "DigitalOcean", "Vercel"],
+      devops: [
+        "Docker",
+        "Nginx",
+        "Linux (Ubuntu)",
+        "CI/CD · GitHub Actions",
+      ],
       services: ["Cloudinary", "Meilisearch"],
+    },
+  },
+  {
+    title: "AI-Powered Dev",
+    description: {
+      tools: ["Claude Code", "Cursor", "GitHub Copilot", "ChatGPT"],
+      practices: [
+        "OpenAI / Claude APIs",
+        "Prompt Engineering",
+        "MCP",
+        "Spec-Driven Development (SDD)",
+      ],
+    },
+  },
+  {
+    title: "Tools",
+    description: {
       workflow: ["Git / GitHub", "Jira", "ClickUp", "Zapier"],
       cms: ["Strapi CMS", "GoHighLevel"],
     },
@@ -39,7 +62,6 @@ const skillTabInfo = [
         "JWT / RBAC Auth",
         "SaaS Architecture",
         "E-Commerce Platforms",
-        "Spec-Driven Development (SDD)",
       ],
       specializations: [
         "Technical SEO & Core Web Vitals",
@@ -67,9 +89,9 @@ export default function Home() {
         <p className="text-base font-mono py-2">
           Proven expertise in delivering complex solutions — from scalable SaaS
           and E-commerce marketplaces to real-time AI/automation and data
-          synchronization engines. I combine deep technical proficiency with a
-          strong focus on clean architecture, technical SEO, and exceptional
-          user experience.
+          synchronization engines. I combine deep technical proficiency with
+          AI-assisted development workflows, cloud deployment, clean
+          architecture, technical SEO, and exceptional user experience.
         </p>
         <div className="flex items-start md:items-center justify-start gap-8 font-mono flex-col sm:flex-row pt-4">
           <div>
